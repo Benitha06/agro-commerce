@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav{   
+    padding-left: 20px; 
+    color: blue;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+.nav ul{
+    align-items: center;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+    gap: 20px;
+}
+a{   
+    color:blue;
+    text-decoration: none;
+}
