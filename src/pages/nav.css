@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.lists{    
+    height: 60px;
+    color: white;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+.lists ul{
+    padding-left: 30px;
+    align-items: center;
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin-right: 10px;
+    gap: 20px;
+}
+li {   
+    color: white;
+    text-decoration: none;
+}

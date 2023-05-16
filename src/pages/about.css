@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.top{
+    background-image: url(../images/istockphoto-1254062265-612x612.jpg);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+}
+
+.ins {
+    background: linear-gradient(to right, rgba(0, 0, 255, 0.568), rgba(0, 0, 255, 0.082), rgba(0, 0, 255, 0));
+    width: 100%;
+    height: 100%;
+}
+.ins h1{
+    padding: 250px 0 0 200px;
+    color: white;
+}
+.us{
+    color: blue;
+    margin: 40px 0 30px 150px;
+}
+.paragraphs{
+    margin-left: 150px;
+    display: flex;
+    gap: 50px;
+}
