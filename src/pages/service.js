@@ -13,19 +13,19 @@ function Service(){
       <h4>ALL PRODUCTS FOR YOU</h4>
      </div>
     <div className="cardss">
-        <img src={Image}/>
+        <img src={Image} alt=""/>
         <h2>Save your money with us</h2>
         <p>Loremkm nfrenvekvmmvmmmm mkfmroerkermm <br/> nbtyrxhctjvybhjnk</p>
         <button>Open your account</button>
     </div>
     <div className="cardss">
-        <img src={Image}/>
+        <img src={Image} alt=""/>
         <h2>Save your money with us</h2>
         <p>Loremkm nfrenvekvmmvmmmm mkfmroerkermm <br/> nbtyrxhctjvybhjnk</p>
         <button>Open your account</button>
     </div>
     <div className="cardss">
-        <img src={Image}/>
+        <img src={Image} al/>
         <h2>Save your money with us</h2>
         <p>Loremkm nfrenvekvmmvmmmm mkfmroerkermm <br/> nbtyrxhctjvybhjnk</p>
         <button>Open your account</button>
