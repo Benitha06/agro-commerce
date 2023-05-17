@@ -25,7 +25,7 @@ function Service(){
         <button>Open your account</button>
     </div>
     <div className="cardss">
-        <img src={Image} al/>
+        <img src={Image} alt=""/>
         <h2>Save your money with us</h2>
         <p>Loremkm nfrenvekvmmvmmmm mkfmroerkermm <br/> nbtyrxhctjvybhjnk</p>
         <button>Open your account</button>
