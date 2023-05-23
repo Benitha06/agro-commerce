@@ -1,0 +1,9 @@
+.bt button{
+    margin-top: 20px;
+    margin-left: 500px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(8, 8, 59);
+    color: white;
+}
