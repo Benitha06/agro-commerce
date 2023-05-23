@@ -26,4 +26,23 @@
     margin-left: 150px;
     display: flex;
     gap: 50px;
+    margin-bottom: 50px;
+}
+.sub{
+    margin-top: 50px;
+}
+.sub h2{
+    color: rgb(7, 7, 54);
+    margin-bottom: 10px;
+}
+.form{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+}
+.form input {
+    margin-top: 30px;
+    margin-right: 600px;
 }

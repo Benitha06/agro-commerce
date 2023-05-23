@@ -1,5 +1,8 @@
 import React from 'react';
 import './home.css';
+import {details} from '../constants'
+import {describe} from '../constants'
+import Button from './comp/button'
 
  function Home(){
     
@@ -18,6 +21,43 @@ import './home.css';
             </div>
 
         </div>
+        </div> 
+         <Button btnName="Click"/>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age </th>
+                <th>Gender</th>
+            </tr >
+
+            {details.map((de) =>(
+                    <tr key={de.id}>
+                    <td>{de.Name}</td>
+
+                    <td>{de.Age}</td>
+
+                    <td>{de.Gender}</td>
+                </tr> 
+                ))
+                }
+                
+         
+            </thead>      
+            
+        </table>
+
+        <div className='ca'>
+              {
+                describe.map((c) => 
+                (
+                    <div className='ca1'>
+                    <h1>{c.title}</h1>
+                    <p>{c.description}</p>
+                    <button>{c.btn}</button>
+                    </div>
+                ))}  
         </div>
     </div>
 
