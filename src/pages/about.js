@@ -96,7 +96,7 @@ function About(){
                  
                 <input type="Password" placeholder="Password" value={userPassword} onChange={handleUserPassword}/>  <br/> <br/>
 
-                  <p>Welcome, your email is: {result.userEmail}</p>
+                  <p>Welcome, your email is {result.userEmail}</p>
 
                   <input type="Submit" onClick={handleSubmit}/> <br/> <br/>
             </div>
@@ -107,7 +107,7 @@ function About(){
 
             <div className="text">
                 <textarea className="write" rows={5} onChange={three}/>
-                <p>The number of characters is {textCount}</p>
+                <p>The number of characters is: {textCount}</p>
             </div>
         </div>
     );
