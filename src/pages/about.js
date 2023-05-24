@@ -47,14 +47,17 @@ function About(){
 
      const [show , setShow] = useState(false);
 
-     const handleshow = (e) => {
+     const handleshow = () => {
         setShow(current => !current);
      }
 
      const [hide , sethide] = useState("Show Item");
      const change = () => {
         sethide(<p>Hide</p>)};
-
+    const other = () => {
+           if( count % 2 != 0 ){
+                 sethide(<p>Show Item</p>)
+            } };
     return(
 
         <div>
@@ -100,7 +103,7 @@ function About(){
                   <input type="Submit" onClick={handleSubmit} className="btn"/> <br/> <br/>
             </div>
             <div className="show">
-            <button className="btn" onClick={() => {handleshow(); change();}}>{hide}</button>
+            <button className="btn" onClick={() => {handleshow(); change(); other(); handleclick();}}>{hide}</button>
   
       {show && (
         <div>
