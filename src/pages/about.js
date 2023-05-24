@@ -55,7 +55,7 @@ function About(){
      const change = () => {
         sethide(<p>Hide</p>)};
     const other = () => {
-           if( count % 2 != 0 ){
+           if( count % 2 !== 0 ){
                  sethide(<p>Show Item</p>)
             } };
     return(
