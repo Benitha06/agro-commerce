@@ -40,21 +40,20 @@ function About(){
      const handleclick = ()=>{
         setCount(count + 1);
      };
-      const nw = () =>{
-     const st = document.querySelector(".show");
-     const par = document.createElement("p");
-     const text = document.createTextNode("I am Visible!");
-     par.appendChild(text);
-     st.appendChild(par);
-    
-     console.log(par);
-     document.querySelector(".btn").innerHTML ="Hide";
-
-      }
       const [textCount , setTextCount] = useState(0)
      const three = (e) => {
        setTextCount(e.target.value.length)
      }
+
+     const [show , setShow] = useState(false);
+
+     const handleshow = (e) => {
+        setShow(current => !current);
+     }
+
+     const [hide , sethide] = useState("Show Item");
+     const change = () => {
+        sethide(<p>Hide</p>)};
 
     return(
 
@@ -78,11 +77,11 @@ function About(){
 
                 <p>Lorem lorem lorem jgn lwfsbnglibvqraf lrfno; vgfn qa;ogbnqa;gbnalrgbngrbg <br/>robrgbrtg dnbjqafkl</p>
             </div>
-
+          <div className="all">
             <div className="sub">
                 <h2>number of subscribers: {count} </h2>
-              <button onClick={handleclick}>Subscribe</button>
-              <button onClick={handleMinus}>Unsubscribe</button>
+              <button onClick={handleclick} className="btn">Subscribe</button>
+              <button onClick={handleMinus} className="btn">Unsubscribe</button>
             
            
 
@@ -98,16 +97,25 @@ function About(){
 
                   <p>Welcome, your email is {result.userEmail}</p>
 
-                  <input type="Submit" onClick={handleSubmit}/> <br/> <br/>
+                  <input type="Submit" onClick={handleSubmit} className="btn"/> <br/> <br/>
             </div>
             <div className="show">
-            <button className="btn" onClick={nw}>Show Items</button>
+            <button className="btn" onClick={() => {handleshow(); change();}}>{hide}</button>
+  
+      {show && (
+        <div>
+          <p>I am visible</p>
+        </div>
+      )}
+
+    
             
             </div>
 
             <div className="text">
                 <textarea className="write" rows={5} onChange={three}/>
                 <p>The number of characters is: {textCount}</p>
+            </div>
             </div>
         </div>
     );
